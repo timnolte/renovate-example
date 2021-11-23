@@ -1,6 +1,6 @@
-FROM forumone/wordpress:7.3-xdebug AS dev
+FROM forumone/wordpress:7.4-xdebug AS dev
 
-FROM forumone/wordpress:7.3 AS base
+FROM forumone/wordpress:7.4 AS base
 
 FROM composer:2 AS composer
 

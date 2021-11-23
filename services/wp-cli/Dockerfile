@@ -1,1 +1,1 @@
-FROM forumone/wordpress-cli:7.3-cli2.4.0
+FROM forumone/wordpress-cli:7.4-cli2.4.0
