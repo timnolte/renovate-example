@@ -5,13 +5,17 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://satispress.forumone.dev/satispress/"
     }
   ],
   "require": {
-    "johnpbloch/wordpress": "~5.5.0",
-    "johnpbloch/wordpress-core": "~5.5.0",
+    "johnpbloch/wordpress": "~5.8.0",
+    "johnpbloch/wordpress-core": "~5.8.0",
     "wecodemore/wpstarter": "~2.0",
-    "wpackagist-plugin/custom-post-type-ui": "1.7.4",
+    "wpackagist-plugin/custom-post-type-ui": "1.10.0",
     "wpackagist-plugin/timber-library": "*",
     "wpackagist-plugin/wordpress-seo": "*"
   },
