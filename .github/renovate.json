@@ -3,11 +3,7 @@
     "config:base"
   ],
   "enabledManagers": [
-    "buildkite",
-    "composer",
-    "docker-compose",
-    "dockerfile",
-    "npm"
+    "composer"
   ],
   "rangeStrategy": "bump",
   "automerge": false,
@@ -19,21 +15,9 @@
   ],
   "packageRules": [
     {
-      "groupName": "Buildkite (all)",
-      "matchManagers": ["buildkite"]
-    },
-    {
       "groupName": "Composer (all)",
       "matchManagers": ["composer"],
       "rangeStrategy": "update-lockfile"
-    },
-    {
-      "groupName": "Docker (all)",
-      "matchManagers": ["docker-compose","dockerfile"]
-    },
-    {
-      "groupName": "NPM (all)",
-      "matchManagers": ["npm"]
     }
   ],
   "separateMinorPatch": false
