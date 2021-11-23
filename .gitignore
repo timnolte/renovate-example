@@ -1,0 +1,26 @@
+# IDE files
+.buildpath
+.project
+.settings
+.idea
+.vscode
+
+# OS files
+.DS_Store
+Thumbs.db
+tags*
+
+# Archives & Development Files
+*.zip
+*.tgz
+*.7z
+*.gz
+*.sql
+*.log
+
+# Node/NPM
+node_modules
+
+# Docker Compose overrides
+docker-compose.override.yml
+

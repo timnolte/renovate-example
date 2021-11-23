@@ -1,0 +1,12 @@
+<!-- Provided by templates/footer.twig -->
+{% embed '@layouts/footer/footer.twig' with {
+	'has_constrain': true
+} %}
+	{% block content %}
+		{{ function('get_sidebar', 'footer') }}
+		{% include '@components/copyright/copyright.twig' with {
+  		'year': {	long: current_year },
+	  	'site_name': site.name
+  	} %}
+	{% endblock %}
+{% endembed %}

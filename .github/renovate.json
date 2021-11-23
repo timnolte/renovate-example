@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "enabledManagers": [
+    "buildkite",
+    "composer",
+    "docker-compose",
+    "dockerfile",
+    "npm"
+  ],
+  "rangeStrategy": "bump",
+  "automerge": false,
+  "schedule": [
+    "before 1pm every weekday",
+    "before 3pm every weekday",
+    "before 5pm every weekday",
+    "before 6am on the first day of the month"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Buildkite (all)",
+      "matchManagers": ["buildkite"]
+    },
+    {
+      "groupName": "Composer (all)",
+      "matchManagers": ["composer"],
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "groupName": "Docker (all)",
+      "matchManagers": ["docker-compose","dockerfile"]
+    },
+    {
+      "groupName": "NPM (all)",
+      "matchManagers": ["npm"]
+    }
+  ],
+  "separateMinorPatch": false
+}
