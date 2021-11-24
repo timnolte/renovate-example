@@ -2,23 +2,10 @@
   "extends": [
     "config:base"
   ],
-  "enabledManagers": [
-    "composer"
-  ],
-  "rangeStrategy": "bump",
-  "automerge": false,
-  "schedule": [
-    "before 1pm every weekday",
-    "before 3pm every weekday",
-    "before 5pm every weekday",
-    "before 6am on the first day of the month"
-  ],
   "packageRules": [
     {
-      "groupName": "Composer (all)",
       "matchManagers": ["composer"],
       "rangeStrategy": "update-lockfile"
     }
-  ],
-  "separateMinorPatch": false
+  ]
 }
